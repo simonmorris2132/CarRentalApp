@@ -49,7 +49,7 @@ public class Car {
 
         String output = "";
 
-        output += model + " " + name /*+ " - Price: " + currency.format(price) + " per day."*/; //commented code for later when working w/ price
+        output += model + " " + name;
 
         return output;
     }
