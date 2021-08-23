@@ -9,20 +9,18 @@ public class CLI {
 
     public int getInt(int min, int max) {
         try {
-            //String[] blarg = {}; //This is a test for error messages
             System.out.print("Input: ");
             int input = scanner.nextInt();
-            //String asdf = blarg[1]; //This is a test for error messages
             if (input > max || input < min) {
                 System.out.println("Input is out of range! Please try again.");
                 return getInt(min, max);
             }
             return input;
-        } catch (InputMismatchException exception) {//testing for data types outside of int
+        } catch (InputMismatchException exception) {
             System.out.println("Incorrect input! Please provide a number and try again.");
             scanner.nextLine();
             return getInt(min, max);
-        } catch (Exception exception) {//testing for unknown errors
+        } catch (Exception exception) {
             System.out.println("An unknown error appeared.");
             scanner.nextLine();
             return getInt(min, max);
