@@ -29,8 +29,7 @@ public class Menu {
 
             for (int i = 0; i < arrList.size(); i++) {
                 if (selection - 1 == i) {
-                    //System.out.println("\n---\nThank you for choosing the " + arrList.get(i) + "! Safe Travels!\n---");
-                    rentedTotal(i); //For asking customer how long they wish to rent the car for and what the total cost will be.
+                    rentedTotal(i);
                     rented.add(arrList.get(i));
                     arrList.remove(i);
                     run();
