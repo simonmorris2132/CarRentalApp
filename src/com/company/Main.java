@@ -2,8 +2,13 @@ package com.company;
 
 public class Main {
 
-    public static void main(String[] args) {
-	// write your code here
+    static boolean check = true;
+
+    public static void start() {
+
+        System.out.println("Welcome to the Car Rental Company!\n");
+
+
     }
 }
 
