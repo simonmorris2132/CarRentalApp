@@ -2,13 +2,8 @@ package com.company;
 
 public class Main {
 
-    static boolean check = true;
-
-    public static void start() {
-
-        System.out.println("Welcome to the Car Rental Company!\n");
-
-
+    public static void main(String[] args) {
+        new Menu().start();
     }
 }
 
