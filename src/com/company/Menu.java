@@ -17,12 +17,16 @@ public class Menu {
 
     public void run() {
 
-        while (arrList.size() != 0) {
+        System.out.println("\n---\nWe have a total of " + arrList.size() + " cars available and " + rented.size() + " cars being rented.");
+        System.out.println("\nChoose from the following menus: ");
+        System.out.println("1. Rent a car");
+        System.out.println("2. Return a car");
 
-            System.out.println("\nThis is our current selection of rental cars:");
-            for (int i = 0; i < arrList.size(); i++) {
-                System.out.println(i + 1 + ") " + arrList.get(i));
-            }
+        int input = userInput.getInt(1, 2);
+
+        if (input == 1) {
+
+        }
 
             System.out.println("Please choose the car you wish to rent!");
             int selection = userInput.getInt(1, arrList.size());
@@ -38,8 +42,6 @@ public class Menu {
             }
 
         }
-        subMenu();
-    }
 
     private void subMenu() {
         System.out.println("\nThank you for choosing The Car Rental Company! What would you like to do from this point?");
