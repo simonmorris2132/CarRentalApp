@@ -12,12 +12,12 @@ public class CLI {
             System.out.print("Input: ");
             int input = scanner.nextInt();
             if (input > max || input < min) {
-                System.out.println("Input is out of range! Please try again.");
+                System.out.println("Input is out of range. Please try again.");
                 return getInt(min, max);
             }
             return input;
         } catch (InputMismatchException exception) {
-            System.out.println("Incorrect input! Please provide a number and try again.");
+            System.out.println("Incorrect input. Please provide a number and try again.");
             scanner.nextLine();
             return getInt(min, max);
         } catch (Exception exception) {
@@ -28,7 +28,7 @@ public class CLI {
     }
 
     public void exit() {
-        System.out.println("\n---\nThank you for stopping by!\n---");
+        System.out.println("\nThank you for stopping by!\n");
         System.exit(0);
     }
 
