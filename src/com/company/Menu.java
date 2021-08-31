@@ -62,7 +62,7 @@ public class Menu {
         while (rented.size() != 0){
             inv.showRentedMenu(); //loops through rentedCars and creates and changes list as it continues.
 
-            System.out.print("\nInput:");
+            System.out.print("\n");
             int selection = userInput.getInt(1, rented.size());
 
             for (int i = 0; i < rented.size(); i++){

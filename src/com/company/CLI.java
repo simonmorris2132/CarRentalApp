@@ -44,7 +44,8 @@ public class CLI {
             System.out.print("Input: ");
             String userInput = scanner.nextLine().trim();
 
-            if (userInput == " ") {System.out.println("Your input cannot be empty! Please try again.");
+            if (userInput == " ") {
+                System.out.println("Your input cannot be empty! Please try again.");
                 return getString(input);
             }
             return input;
